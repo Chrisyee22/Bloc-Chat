@@ -1,6 +1,8 @@
 
 <section class="room-content">
-  <h1 class="room-title">{{home.rooms}}</h1>
+  <span class="room-title"
+        ng-repeat="currentRoom in home.rooms"
+  >{{currentRoom.$value}}</span>
 
 
 </section>
