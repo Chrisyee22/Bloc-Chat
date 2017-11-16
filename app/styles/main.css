@@ -1,0 +1,36 @@
+html, body {
+   height: 100%;
+}
+
+
+body {
+  background-color: #0066ff;
+  text-align: left;
+  font-family: 'Times New Roman', sans-serif;
+  color: #fff;
+
+}
+ h1{
+   padding:0 20px;
+ }
+
+.room-title {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  padding: 0 20px;
+  min-height: 30px;
+  float: left;
+  clear: left;
+
+}
+
+.modal-open{
+  color: black;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Times New Roman', sans-serif;
+}
