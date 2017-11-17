@@ -11,7 +11,15 @@
                    url: '/',
                    controller: 'HomeCtrl as home',
                    templateUrl: '/templates/home.html'
-               });
+               })
+
+                .state('home.chat',{
+                  url: 'chat',
+
+                  templateUrl:'/template/messages.html'
+
+                });
+
        }
 
 

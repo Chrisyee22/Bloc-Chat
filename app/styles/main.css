@@ -15,10 +15,23 @@ body {
 
  }
 
-.btn{
+#createButton{
 
 float: left;
 clear: left;
+
+
+}
+
+.chatArea{
+  color:black;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  height: 85%;
+  width: 80%;
+  border: 25px solid #0066ff
 
 
 }
@@ -31,6 +44,7 @@ clear: left;
   min-height: 30px;
   float: left;
   clear: left;
+
 
 
 
