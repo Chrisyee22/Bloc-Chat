@@ -1,11 +1,11 @@
 (function() {
     function NewRoomCtrl($uibModalInstance, Room, items){
 
-      var RoomObject = Room;
 
-         this.ok = function (Room) {
-           RoomObject.add(Room);
-           $uibModalInstance.close(Room);
+         this.ok = function () {
+
+           Room.add(this.newRoom);
+           $uibModalInstance.close();
          };
 
         this.cancel = function () {
