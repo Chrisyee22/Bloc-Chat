@@ -1,7 +1,12 @@
 (function() {
     function HomeCtrl(Room, Message, $uibModal) {
       this.rooms = Room.all;
+      this.currentRoom = null;
+      this.messages = null;
+
+
       this.openModal=function(){
+
 
         $uibModal.open ({
           templateUrl: '../../templates/new-room-modal.html',
@@ -10,11 +15,14 @@
         });
 
 
-        this.Message = Message;
-        this.newMessage = Message.currentMessages
-
-
       };
+      this.setCurrentRoom = function (room) {
+           this.currentRoom = room;
+           console.log(room)
+           this.messages = Message.getByRoomId(room.$id);
+
+       };
+
     }
 
     angular

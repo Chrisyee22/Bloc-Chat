@@ -1,16 +1,32 @@
-
 <section class="room-content">
   <h1>Bloc Chat</h1>
 
+    <span>
 
-  <span class="room-title"
-        ng-repeat="currentRoom in home.rooms"
-  >{{currentRoom.$value}}</span>
+        <div ng-repeat="room in home.rooms">
+          <a ng-click="home.setCurrentRoom(room)"> {{ room.$value }}
+            </a>
+          </div>
 
 
-<button ng-click="home.openModal()" type="button" class ="btn btn-primary" id="createButton">Create a Room </button>
 
-<div class='chatArea'>
+      <button type="button" class="createRoom" ng-click="home.openModal()">New Room</button>
+    </span>
 
-</div>
+
+
+
+      <section class="chatMessages">
+          <h1>{{ home.currentRoom.$value }}</h1>
+           <div class="messageContainer">
+             <div class="message" ng-repeat="message in home.messages">
+              <p class="messageUsername">{{ message.username }} <span class="messageTime">{{ message.sentAt }}</span></p>
+              <p class="messageContent">{{ message.content }}</p>
+             </div>
+            </div>
+
+          </section>
+
+
+
 </section>

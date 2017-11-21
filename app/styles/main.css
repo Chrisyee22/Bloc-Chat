@@ -15,20 +15,32 @@ body {
 
  }
 
-#createButton{
+.createRoom{
 
+background-color: green;
 float: left;
 clear: left;
+}
+p{
+  color: black;
+}
 
+a{
+  padding:0 20px;
+  color:white;
+}
+.messageContainer{
+color: black;
 
 }
 
-.chatArea{
-  color:black;
+.chatMessages{
+  color:blue;
   background-color: white;
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 200px;
+  left:200px;
   height: 85%;
   width: 80%;
   border: 25px solid #0066ff
